@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cs.css">
+    <title>Profitize Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"> DASHBOARD</div>
+        <div class="menu-item">📊 Keseluruhan</div>
+        <div class="menu-item">📈 perkembangan</div>
+        <div class="menu-item">👥 Customers</div>
+        <div class="menu-item">📄 Data Laporan</div>
+        <div class="menu-item">💬 Pesan</div>
+        <div class="menu-item">⚙ Pengaturan</div>
+        <div class="menu-item" style="margin-top: auto;">🚪 Keluar</div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>HOME</h1>
+            <input type="text" class="search-bar" placeholder="Search...">
+            
+            <div class="user-profile">
+                <span>Ashadians</span>
+                <img src="foto.jpg" alt="Eva Murphy">
+            </div>
+        </div>
+        <div class="kpis">
+            <div class="kpi-card">
+                <div class="kpi-title">Pendapatan</div>
+                <div class="kpi-value">85.000.000</div>
+                <div class="kpi-change">+15%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Pengunjung</div>
+                <div class="kpi-value">12.356</div>
+                <div class="kpi-change">+11%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Pelanggan Tetap</div>
+                <div class="kpi-value">7.512</div>
+                <div class="kpi-change" style="color: #433878;">-7%</div>
+            </div>
+        </div>
+        <div class="chart-container">
+            <h2>Perkembangan Tahun Ini</h2>
+            <canvas id="growthChart"></canvas>
+        </div>
+        <div class="analytics-container">
+            <div class="pie-chart">
+                <h2>Diagram Analisis</h2>
+                <canvas id="analyticsChart"></canvas>
+            </div>
+            <div class="activity-table">
+                <h2>Aktivitas Terbaru</h2>
+                <table>
+                    <tr>
+                        <th>pelanggan</th>
+                        <th>Status</th>
+                        <th>ID Order</th>
+                        <th>Pengembalian</th>
+                        <th>Biaya</th>
+                    </tr>
+                    <tr>
+                        <td>sehun</td>
+                        <td><span class="status-pill status-new">New Customer</span></td>
+                        <td>#00286190</td>
+                        <td>1 hari lalu</td>
+                        <td>125.000</td>
+                    </tr>
+                    <tr>
+                        <td>baekhyun</td>
+                        <td><span class="status-pill status-signed">Signed Up</span></td>
+                        <td>#00286159</td>
+                        <td>2 hari lalu</td>
+                        <td>350.000</td>
+                    </tr>
+                    <tr>
+                        <td>jong in</td>
+                        <td><span class="status-pill status-new">New Customer</span></td>
+                        <td>#00286158</td>
+                        <td>1 minggu lalu</td>
+                        <td>453.500</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
